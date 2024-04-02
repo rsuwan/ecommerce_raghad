@@ -1,3 +1,5 @@
+
 export const getCategories = (req, res) => {
-    return res.json({message: "Categories.."});
-}
+  return res.json({ message: "Categories.." });
+};
+
