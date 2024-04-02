@@ -4,8 +4,9 @@ export const fileValidation = {
   pdf: ['appliction/pdf']
 };
 
-function fileUpload(customValidation = []) {
-  const storage = multer.diskStorage({});
+function fileUpload(customValidation = []) //فانكشن لنوع اسم بالرفع
+{
+  const storage = multer.diskStorage({});//ستورج مقسومة لنصين
 
   function fileFilter(req, file, cb) {
     if (customValidation.includes(file.mimetype)) {
